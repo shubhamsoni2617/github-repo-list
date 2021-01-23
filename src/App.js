@@ -37,8 +37,7 @@ const App = () => {
       <Input dispatch={dispatch} />
       {searchText && !loading && (
         <p>
-          Showing 1-{total <= 100 ? total : 100} of {total} results found for "
-          {searchText}"
+          Showing 1-{total <= 100 ? total : 100} of {total} results
         </p>
       )}
       {searchText && <CardList list={data} loading={loading} />}
