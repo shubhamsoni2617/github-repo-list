@@ -4,7 +4,7 @@ import "./style.css";
 const Loader = () => {
   return (
     <div id="overlay">
-      <div className="loader"></div>
+      <div className="loader" />
     </div>
   );
 };
