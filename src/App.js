@@ -35,7 +35,7 @@ const App = () => {
     <div>
       {loading && <Loader />}
       <Input dispatch={dispatch} />
-      {searchText && !loading && (
+      {searchText && !loading && total && (
         <p>
           Showing 1-{total <= 100 ? total : 100} of {total} results
         </p>
